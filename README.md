@@ -23,6 +23,8 @@ cd /docker/db
 docker compose up --buil -d
 ```
 
+<p>After creating the database container, you must run the script that is located in /resources/script.sql </p>
+
 ### Command to run backend with docker
 
 ```
