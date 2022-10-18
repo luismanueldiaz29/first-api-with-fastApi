@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  backend-book:
+    container_name: backend-book
+    image: backend/book:0.0.1
+    build:
+      context: ../../
+      dockerfile: Dockerfile
+    env_file:
+      - ../../.env
+    restart: always
+    ports:
+      - 9060:9060
