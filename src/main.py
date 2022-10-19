@@ -4,11 +4,20 @@ import schemas.author as _schemas
 
 import sqlalchemy.orm as _orm
 import services.service as _services
+from fastapi.middleware.cors import CORSMiddleware
 
 if TYPE_CHECKING:
     from sqlalchemy.orm import Session
 
 app = _fastapi.FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins="*",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/api/authors/", response_model=_schemas.Author)
 async def create_cotact(
