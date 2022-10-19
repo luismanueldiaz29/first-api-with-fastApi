@@ -13,27 +13,7 @@ Create file .env at the root of the project
     PORT=9060
 ```
 
-### Command to run badatabase with docker
-
-```
-cd /docker/db
-```
- 
- later
-
-```
-docker compose up --buil -d
-```
-
-<p>After creating the database container, you must run the script that is located in /resources/script.sql </p>
-
 ### Command to run backend with docker
-
-```
-cd /docker/ms
-```
-
- later
 
 ```
 docker compose up --buil -d
