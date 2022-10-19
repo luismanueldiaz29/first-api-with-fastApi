@@ -25,4 +25,4 @@ services:
       - postgres-book
     restart: always
     ports:
-      - 9060:9060
+      - ${PORT}:${PORT}

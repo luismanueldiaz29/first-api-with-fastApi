@@ -9,6 +9,8 @@ Create file .env at the root of the project
     POSTGRES_DB=books
     POSTGRES_HOST=postgres
     POSTGRES_HOSTNAME=127.0.0.1
+    HOST_DB=postgres-book
+    PORT=9060
 ```
 
 ### Command to run badatabase with docker
