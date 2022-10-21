@@ -2,7 +2,7 @@ from json.encoder import INFINITY
 from typing import TYPE_CHECKING, List
 
 import config.database as _database
-import models.author as _models
+import models.author_model as _models
 import schemas.author as _schemas
 
 if TYPE_CHECKING:

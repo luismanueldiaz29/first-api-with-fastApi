@@ -3,7 +3,7 @@ import fastapi as _fastapi
 import schemas.author as _schemas
 
 import sqlalchemy.orm as _orm
-import services.service as _services
+import services.author_service as _services
 from fastapi.middleware.cors import CORSMiddleware
 
 if TYPE_CHECKING:

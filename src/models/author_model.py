@@ -1,5 +1,4 @@
 
-import datetime as _dt
 import sqlalchemy as _sql
 import config.database as _database
 
@@ -9,3 +8,4 @@ class Author(_database.Base):
     name = _sql.Column(_sql.String, index=True)
     age = _sql.Column(_sql.Integer, index=True)
     gender = _sql.Column(_sql.String, index=True)
+
