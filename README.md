@@ -16,5 +16,20 @@ Create file .env at the root of the project
 ### Command to run backend with docker
 
 ```
-docker compose up --buil -d
+docker-compose build
+docker-compose up
 ```
+
+docker ps
+
+docker exec -it backend-book bash
+
+python
+
+import services.author_service as _services
+_services._add_tables()
+
+import services.book_service as _services
+_services._add_tables()
+
+uvicorn main:app --reload

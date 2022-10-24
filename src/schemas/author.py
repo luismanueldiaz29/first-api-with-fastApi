@@ -1,13 +1,15 @@
 import datetime as _dt
 import pydantic as _pydantic
+from typing import List, Optional
 
 class _BaseAuthor(_pydantic.BaseModel):
-    name:str
-    age:int
-    gender:str
+    name: Optional[str] = None
+    age: Optional[int] = None
+    gender: Optional[str] = None
 
 class Author(_BaseAuthor):
-    author_id:int
+    author_id: Optional[int] = None
+    
     class Config:
         orm_mode = True
 

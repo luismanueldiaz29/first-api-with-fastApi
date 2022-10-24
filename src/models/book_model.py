@@ -11,4 +11,5 @@ class Book(_database.Base):
     rating = _sql.Column(_sql.String, index=True)
     created_at = _sql.Column(DateTime(timezone=True), server_default=func.now())
     author_id = _sql.Column(_sql.Integer, ForeignKey('authors.author_id'))
+    
     author = relationship('Author')
